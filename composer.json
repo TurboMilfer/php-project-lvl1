@@ -1,0 +1,13 @@
+{
+    "name": "hexlet/code",
+    "description": "my 1st project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "TurboMilfer",
+            "email": "gerb200@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {}
+}
