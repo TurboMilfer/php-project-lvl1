@@ -1,6 +1,6 @@
 {
     "name": "hexlet/code",
-    "bin": "bin/brain-games",
+    "bin": ["bin/project-a-bin"],
     "description": "my 1st project",
     "license": "MIT",
     "authors": [
