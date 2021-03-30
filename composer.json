@@ -1,5 +1,10 @@
-{
+{   
     "name": "hexlet/code",
+    "autoload": {
+	    "files": [
+		    "src/Cli.php"
+	    ]
+    },
     "bin": ["bin/project-a-bin"],
     "description": "my 1st project",
     "license": "MIT",
@@ -10,5 +15,7 @@
         }
     ],
     "minimum-stability": "stable",
-    "require": {}
+    "require": {
+        "wp-cli/php-cli-tools": "^0.11.12"
+    }
 }
