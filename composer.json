@@ -14,8 +14,14 @@
             "email": "gerb200@gmail.com"
         }
     ],
+    "scripts": {
+        "phpcs": "phpcs"
+    },
     "minimum-stability": "stable",
     "require": {
         "wp-cli/php-cli-tools": "^0.11.12"
+    },
+    "require-dev": {
+        "squizlabs/php_codesniffer": "^3.5"
     }
 }
