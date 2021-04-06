@@ -7,9 +7,9 @@ jobs:
     name: make-lint-job
     runs-on: ubuntu-latest
     steps:
-      - name: composer install
-        run: composer install
-        working-directory: ../.      
+      - name: composer-install
+        uses: php-actions/composer@v5
+
       - name: doing the thing
         run: make lint
         working-directory: ../.
