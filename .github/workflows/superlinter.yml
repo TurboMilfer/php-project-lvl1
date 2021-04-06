@@ -1,17 +1,11 @@
 name: make-lint
 
-# Run this workflow every time a new commit pushed to your repository
 on: push
 
 jobs:
-  # Set the job key. The key is displayed as the job name
-  # when a job name is not provided
-  make-lint:
-    # Name the Job
-    name: make lint job
-    # Set the type of machine to run on
+  my-job:
+    name: make-lint-job
     runs-on: ubuntu-latest
-
     steps:
       - name: doing the thing
         command: ["make lint"] 
