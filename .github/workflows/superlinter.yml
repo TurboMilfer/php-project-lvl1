@@ -9,7 +9,7 @@ jobs:
     steps:
       - name: composer install
         run: composer install
-        working-directory: ../      
+        working-directory: ../.      
       - name: doing the thing
         run: make lint
-        working-directory: ../
+        working-directory: ../.
