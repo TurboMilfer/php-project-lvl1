@@ -8,5 +8,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: doing the thing
-        run: |
-                make lint
+        run: make lint *
+        working-directory: ./
