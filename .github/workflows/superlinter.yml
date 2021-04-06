@@ -8,4 +8,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: doing the thing
+        uses: php-project-lvl1/
         command: ["make lint"] 
