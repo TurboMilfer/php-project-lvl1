@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
             - name: pwd
-              run: pwd
+              run: pwd | cat
              - name: composer install
              run: composer install
              working-directory: ../      
