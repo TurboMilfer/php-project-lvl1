@@ -8,4 +8,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: doing the thing
-        run: echo "::make lint"
+        run: make lint
