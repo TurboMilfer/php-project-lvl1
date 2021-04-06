@@ -13,6 +13,5 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      # Checks out a copy of your repository on the ubuntu-latest machine
       - name: doing the thing
-        run: make lint
+        command: ["make lint"] 
