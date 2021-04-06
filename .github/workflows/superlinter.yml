@@ -9,4 +9,4 @@ jobs:
     steps:
       - name: doing the thing
         uses: php-project-lvl1/
-        echo: "::make lint"
+        run: echo "::make lint"
