@@ -7,9 +7,11 @@ jobs:
     name: make-lint-job
     runs-on: ubuntu-latest
     steps:
-            # - name: composer install
-            # run: composer install
-            # working-directory: ../      
+            - name: pwd
+              run: pwd
+             - name: composer install
+             run: composer install
+             working-directory: ../      
       - name: doing the thing
         run: make lint
         working-directory: ../
