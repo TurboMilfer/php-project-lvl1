@@ -1,14 +1,19 @@
 name: make-lint
 
-on: push
+on: 
+- push
+- pull_request  
 
 jobs:
   my-job:
     name: make-lint-job
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v2     
       - name: where-tf-am-i-now-? 
-        run: pwd 
+        run: pwd
+      - name: which-files-are-in-my-hometown-?
+        run: ls -a /home/runner/work/php-project-lvl1/php-project-lvl1/
       - name: doing-the-damn-thing
         run: make lint
         working-directory: /home/runner/work/php-project-lvl1/php-project-lvl1/ 
