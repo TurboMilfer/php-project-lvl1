@@ -12,3 +12,8 @@ validate:
 
 dump:
 	composer dump-autoload
+
+brain-even:
+	bin/brain-even
+
+
