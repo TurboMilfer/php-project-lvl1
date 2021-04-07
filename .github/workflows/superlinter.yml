@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: installing phpcs
-        run: sudo apt install phpcs
+        run: composer global require "squizlabs/php_codesniffer=*" 
 
       - name: doing the thing
         run: make lint
