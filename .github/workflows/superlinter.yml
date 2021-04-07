@@ -9,7 +9,8 @@ jobs:
     steps:
       - name: installing phpcs
         run: composer global require "squizlabs/php_codesniffer=*" 
-
+      - name: doing the thing
+        run: pwd 
      
     
       - name: doing the thing
