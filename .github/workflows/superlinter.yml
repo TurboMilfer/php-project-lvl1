@@ -10,6 +10,8 @@ jobs:
       - name: installing phpcs
         run: composer global require "squizlabs/php_codesniffer=*" 
 
+      - name: Install
+        run: make install
       - name: doing the thing
         run: make lint
        
