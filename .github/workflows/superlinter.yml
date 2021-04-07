@@ -9,7 +9,7 @@ jobs:
     steps:
       - name: where-tf-am-i-now-? 
         run: pwd 
-      - name: doing the thing
+      - name: doing-the-damn-thing
         run: make lint
         working-directory: /home/runner/work/php-project-lvl1/php-project-lvl1/ 
        
