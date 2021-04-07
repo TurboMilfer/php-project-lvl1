@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: installing phpcs
-        run: apt instal phpcs
+        run: apt install phpcs
 
       - name: doing the thing
         run: make lint
