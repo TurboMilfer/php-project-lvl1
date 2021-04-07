@@ -14,4 +14,5 @@ jobs:
     
       - name: doing the thing
         run: make lint
+        working-directory: /php-project-lvl1
        
