@@ -12,4 +12,4 @@ jobs:
 
       - name: doing the thing
         run: make lint
-        working-directory: ../.
+       
