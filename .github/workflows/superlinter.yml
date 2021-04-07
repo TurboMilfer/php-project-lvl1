@@ -11,9 +11,9 @@ jobs:
     steps:
       - uses: actions/checkout@v2     
 
-      - name: install-phpcs
-        run: composer require "squizlabs/php_codesniffer=*"
-
+      - name: make-install 
+        run: make install
+        working-directory: /home/runner/work/php-project-lvl1/php-project-lvl1/
       - name: make-lint 
         run: make lint
         working-directory: /home/runner/work/php-project-lvl1/php-project-lvl1/ 
