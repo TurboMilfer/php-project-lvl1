@@ -2,13 +2,14 @@
     "name": "hexlet/code",
     "autoload": {
 	    "files": [
-		    "src/Cli.php",
-		    "src/Brain-even.php"
+		    "src/Games/Brain-calc.php",
+            "src/Games/Brain-even.php",
+            "src/Games/Cli.php"
 	    ]
     },
-    "bin": ["bin/project-a-bin",
-	    "bin/brain-games",
-    "bin/brain-even"],
+    "bin": ["bin/brain-games",
+            "bin/brain-even",
+            "bin/brain-calc"],
     "description": "my 1st project",
     "license": "MIT",
     "authors": [

@@ -12,19 +12,19 @@ function isEven()
     line("Hello, %s!", $name);
     line("Answer 'yes' if number even otherwise answer 'no'.");
     for ($i = 0, $winCount = 1; $i < 3; $i++, $winCount++) {
-        $answer = "";
+        $result = "";
         $randomInt = random_int(0, 999);
         if ($randomInt % 2 === 0) {
-            $answer = "yes";
+            $result = "yes";
         } else {
-            $answer = "no";
+            $result = "no";
         }
         line("Question: {$randomInt}");
-        $userAnswer = prompt("Your answer");
-        if ($userAnswer === $answer) {
+        $userResult = prompt("Your answer");
+        if ($userResult === $result) {
             line("Correct!");
         } else {
-            line("'{$userAnswer}' is wrong answer ;(. Correct answer was '{$answer}'.");
+            line("'{$userResult}' is wrong answer ;(. Correct answer was '{$result}'.");
             break;
         }
         if ($winCount === 3) {
