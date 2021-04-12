@@ -4,10 +4,6 @@
 
 ![super linter](https://github.com/TurboMilfer/php-project-lvl1/actions/workflows/superlinter.yml/badge.svg)
 
-<<<<<<< HEAD
 https://asciinema.org/a/405806 - "brain-even" - game in action!
 https://asciinema.org/a/406767 - "brain-calc" - game in action!
-=======
-https://asciinema.org/a/405806 - "brain-even" game in action!
->>>>>>> b3f73b00b6081d686ac6bbe77116c2527a6ea2fe
 
