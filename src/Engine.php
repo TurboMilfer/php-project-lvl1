@@ -1,7 +1,7 @@
 <?php
 
 namespace Brain\Games\GameEngine;
-  
+
   /*php-cli-tools libraries*/
   use function cli\line;
   use function cli\prompt;
@@ -33,7 +33,7 @@ function even()
         line("Question: How much is the fish?");
         /*$userResult - getting the user answer*/
         $userResult = prompt("Your answer");
-        /*compare user answer & result, if comparison is 
+        /*compare user answer & result, if comparison is
         positive - "Correct!" line displayed and game goes on.
         If user answer contains unforseen values - correction
         line will be displayed and game will be stoped*/
