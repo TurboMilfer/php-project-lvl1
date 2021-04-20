@@ -9,3 +9,5 @@ https://asciinema.org/a/405806 - "brain-even" game in action!
 https://asciinema.org/a/406767 - "brain-calc" game in action!
 
 https://asciinema.org/a/408815 - "brain-gcd" game in action!
+
+https://asciinema.org/a/408849 - "brain-progression" game in action!
