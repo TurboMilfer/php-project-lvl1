@@ -5,7 +5,7 @@ namespace Brain\Games\BrainGcd;
   use function cli\line;
   use function cli\prompt;
 
-function gcd( int $x, int $y): int
+function gcd(int $x, int $y): int
 {
     if ($x > $y) {
         $temp = $x;
