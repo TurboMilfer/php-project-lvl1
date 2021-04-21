@@ -5,7 +5,7 @@ namespace Brain\Games\BrainCalc;
   use function cli\line;
   use function cli\prompt;
 
-function calc()
+function calc(): string
 {
     line('Welcome to the Brain Game!');
     $name = prompt('May I have your name?');
@@ -23,7 +23,7 @@ function calc()
             $result = $randomOne + $randomTwo;
         } elseif ($operatorArray[$randomArrayUnit] === '-') {
             $result = $randomOne - $randomTwo;
-        } elseif ($operatorArray[$randomArrayUnit] === '*') {
+        } else {
             $result = $randomOne * $randomTwo;
         }
         $userResult = prompt("Your answer");

@@ -5,7 +5,7 @@ namespace Brain\Games\BrainPrime;
   use function cli\line;
   use function cli\prompt;
 
-function isPrime($int)
+function isPrime(int $int): string
 {
     if ($int === 1 || $int === 0) {
         return "no";
@@ -18,7 +18,7 @@ function isPrime($int)
     return "yes";
 }
 
-function doPrime()
+function doPrime(): string
 {
     line('Welcome to the Brain Game!');
     $name = prompt('May I have your name?');

@@ -5,7 +5,7 @@ namespace Brain\Games\BrainGcd;
   use function cli\line;
   use function cli\prompt;
 
-function gcd($x, $y)
+function gcd( int $x, int $y): int
 {
     if ($x > $y) {
         $temp = $x;
@@ -17,10 +17,9 @@ function gcd($x, $y)
             $gcd = $i;
         }
     }
-    return $gcd;
 }
 
-function doGcd()
+function doGcd(): string
 {
     line('Welcome to the Brain Game!');
     $name = prompt('May I have your name?');

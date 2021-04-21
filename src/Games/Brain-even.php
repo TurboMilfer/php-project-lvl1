@@ -5,7 +5,7 @@ namespace Brain\Games\BrainEven;
   use function cli\line;
   use function cli\prompt;
 
-function isEven()
+function isEven(): string
 {
     line('Welcome to the Brain Game!');
     $name = prompt('May I have your name?');

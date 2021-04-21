@@ -7,7 +7,7 @@ namespace Brain\Games\GameEngine;
   use function cli\prompt;
 
 /*name your function*/
-function even()
+function even() : string
 {
     /*greeting*/
     line('Welcome to the Brain Game!');
