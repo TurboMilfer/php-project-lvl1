@@ -6,14 +6,17 @@
             "src/Games/Brain-even.php",
             "src/Games/Cli.php",
             "src/Games/Brain-gcd.php",
-            "src/Games/Brain-progression.php"
+            "src/Games/Brain-progression.php",
+            "src/Games/Brain-prime.php"
 	    ]
     },
     "bin": ["bin/brain-games",
             "bin/brain-even",
             "bin/brain-calc",
             "bin/brain-gcd",
-            "bin/brain-progression"],
+            "bin/brain-progression",
+            "bin/brain-prime"
+        ],
     "description": "my 1st project",
     "license": "MIT",
     "authors": [
