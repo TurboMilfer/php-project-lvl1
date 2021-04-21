@@ -36,7 +36,7 @@ function doProgression()
         if (is_numeric($userResult) && intval($userResult) === $result) {
             line("Correct!");
         } else {
-            line("'{$userResult}' is wrong answer ;(. Correct answer was '{$result}'.");
+            line("Let's try again, {$name}!");
             break;
         }
         if ($winCount === 3) {
