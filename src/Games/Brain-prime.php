@@ -18,7 +18,7 @@ function isPrime(int $int): string
     return "yes";
 }
 
-function doPrime(): string
+function doPrime(): void
 {
     line('Welcome to the Brain Game!');
     $name = prompt('May I have your name?');

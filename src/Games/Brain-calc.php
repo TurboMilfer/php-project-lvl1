@@ -5,15 +5,15 @@ namespace Brain\Games\BrainCalc;
   use function cli\line;
   use function cli\prompt;
 
-function calc(): string
+function calc(): void
 {
     line('Welcome to the Brain Game!');
     $name = prompt('May I have your name?');
     line("Hello, %s!", $name);
     line("What is the result of the expression?");
     for ($i = 0, $winCount = 1; $i < 3; $i++, $winCount++) {
-        $randomOne = rand(0, 10);
-        $randomTwo = rand(0, 10);
+        $randomOne = rand(0, 100);
+        $randomTwo = rand(0, 100);
         $randomArrayUnit = rand(0, 2);
         $operatorArray = ['+', '-', '*'];
         $expression = "{$randomOne} {$operatorArray[$randomArrayUnit]} {$randomTwo}";
