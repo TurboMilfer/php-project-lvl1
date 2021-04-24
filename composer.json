@@ -1,7 +1,8 @@
 {   
     "name": "hexlet/code",
     "autoload": {
-	    "files": [
+	    "files": 
+        [
 		    "src/Games/Brain-calc.php",
             "src/Games/Brain-even.php",
             "src/Games/Cli.php",
@@ -10,7 +11,9 @@
             "src/Games/Brain-prime.php"
 	    ]
     },
-    "bin": ["bin/brain-games",
+        "bin": 
+        [
+            "bin/brain-games",
             "bin/brain-even",
             "bin/brain-calc",
             "bin/brain-gcd",
@@ -19,7 +22,8 @@
         ],
     "description": "my 1st project",
     "license": "MIT",
-    "authors": [
+    "authors": 
+    [
         {
             "name": "TurboMilfer",
             "email": "gerb200@gmail.com"
