@@ -13,8 +13,3 @@ if (file_exists($autoloadPath1)) {
 use Brain\Games\BrainCalc;
 
 BrainCalc\calc();
-
-//this-one-is-just-for-the-show
-
-
-

@@ -13,6 +13,3 @@ if (file_exists($autoloadPath1)) {
 use Brain\Games\BrainGcd;
 
 BrainGcd\doGcd();
-
-//this-one-is-just-for-the-show
-
