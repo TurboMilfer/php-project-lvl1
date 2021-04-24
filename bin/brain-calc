@@ -12,4 +12,4 @@ if (file_exists($autoloadPath1)) {
 
 use Brain\Games\BrainCalc;
 
-BrainCalc\calc();
+BrainCalc\game();

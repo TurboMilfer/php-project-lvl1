@@ -21,7 +21,7 @@ function gcd(int $x, int $y): int
     return $gcd;
 }
 
-function doGcd(): void
+function game(): void
 {
     line('Welcome to the Brain Game!');
     $name = prompt('May I have your name?');
