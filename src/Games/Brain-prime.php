@@ -2,8 +2,10 @@
 
 namespace Brain\Games\BrainPrime;
 
-  use function cli\line;
-  use function cli\prompt;
+use Brain\Games\GameEngine;
+
+use function cli\line;
+use function cli\prompt;
 
 function isPrime(int $int): string
 {
@@ -20,24 +22,13 @@ function isPrime(int $int): string
 
 function game(): void
 {
-    line('Welcome to the Brain Game!');
-    $name = prompt('May I have your name?');
-    line("Hello, %s!", $name);
+    $name = GameEngine\greeting();
     line("Answer 'yes' if given number is prime. Otherwise answer 'no'.");
     for ($i = 0, $winCount = 1; $i < 3; $i++, $winCount++) {
         $randomInt = rand(0, 100);
         $result = isPrime($randomInt);
         line("Question: {$randomInt}");
         $userResult = prompt("Your answer");
-        if ($userResult === $result) {
-            line("Correct!");
-        } else {
-            line("'{$userResult}' is wrong answer ;(. Correct answer was '{$result}'.");
-            line("Let's try again, {$name}!");
-            break;
-        }
-        if ($winCount === 3) {
-            line("Congratulations, {$name}!");
-        }
+        GameEngine\check($name, $userResult, $result, $winCount);
     }
 }
