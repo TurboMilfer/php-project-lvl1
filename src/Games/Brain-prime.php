@@ -20,15 +20,11 @@ function isPrime(int $int): string
     return "yes";
 }
 
-function game(): void
+function game()
 {
-    $name = GameEngine\greeting();
-    line("Answer 'yes' if given number is prime. Otherwise answer 'no'.");
-    for ($i = 0, $winCount = 1; $i < 3; $i++, $winCount++) {
-        $randomInt = rand(0, 100);
-        $result = isPrime($randomInt);
-        line("Question: {$randomInt}");
-        $userResult = prompt("Your answer");
-        GameEngine\check($name, $userResult, $result, $winCount);
-    }
+    $randomInt = rand(0, 100);
+    $result = isPrime($randomInt);
+    $objective = 'Answer "yes" if given number is prime. Otherwise answer "no".';
+    $question = "Question: {$randomInt}";
+    GameEngine\engine($objective, $question, $result);
 }
